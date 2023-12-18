@@ -99,5 +99,4 @@ yarn start
 or
 ```shell
 npm run start
-``` start
 ```
