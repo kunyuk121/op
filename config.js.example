@@ -1,6 +1,6 @@
 const config = {
     // Set the number of cards you want to play here, we recommend not exceeding 50 at a time, otherwise it's easy not to chain.
-    repeatCount: 1000, // How many times you want to add to the current gas count.
+    repeatCount: 100, // How many times you want to add to the current gas count.
 
     // How many times you want to increase the current gas.
     increaseGas: 1.3, // How long to pause for each transaction.
@@ -15,11 +15,10 @@ const config = {
     privateKey: "", // your wallet's private key
 
     // Receive address (can also be contract address), if it's empty you're sending to yourself.
-    receiveAddress: "0xc6e865c213c89ca42a622c5572d19f00d84d7a16", // The receive address.
+    receiveAddress: "0xE6Bc352B9357086264819Bc671c859CB11330DB1", // The receive address.
 
     // inscription json data (replace with the inscription json format data you want to play)
-    //tokenJson: 'data:,{"p": "fair-20", "op": "mint", "tick": "fair", "amt": "1000"}', //tokenJson: data:,{"p": "fair-20", "op": "mint", "tick": "fair", "amt": "1000"}', //tokenJson: data:,{"p": "fair-20", "amt": "1000"}
-	//tokenJson: data:,{"a": "NextInscription", "p": "oprc-20", "op": "mint", "tick": "PoS", "amt": "10"}
+    //tokenJson: 'data:,{“p”:“derp-20",“op”:“mint”,“tick”:“derps”,“amt”:“1000"}',
     tokenJson: '', // RPC node (evo-compatible)
 
     // RPC nodes (evm-compatible chains are fine) use the node address of whichever chain they hit
@@ -33,8 +32,8 @@ const config = {
     // bnbchain => https://bsc-dataseed1.bnbchain.org
     // conflux => https://evm.confluxrpc.com
 
-    // rpcUrl: "https://arb1.arbitrum.io/rpc"
-    rpcUrl: "https://evm.confluxrpc.com"
+    // rpcUrl: "https://opbnb.publicnode.com"
+    rpcUrl: "https://opbnb.publicnode.com"
 }
 
 module.exports = config
